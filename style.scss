@@ -1,0 +1,67 @@
+body{
+    background: #aab6ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .search{
+        padding:0px 20px;
+        background-color: #fff;
+        border-radius: 100px;
+        border: 2px solid transparent;
+
+        &error{
+       border: 2px solid red;
+       animation: wiggle 2s ease-in-out forwards;
+       @keyframes wiggle{
+        0% , 7% {
+            transform: rotate z (0);
+        }
+        15% {
+            transform: rotate z (-15deg);
+        }
+        20% {
+            transform: rotate z (10deg);
+        }
+        25% {
+            transform: rotate z (-10deg);
+        }
+        30% {
+            transform: rotate z (6deg);
+        }
+        35% {
+            transform: rotate z (-4deg);
+        }
+        40%, 100% {
+            transform: rotate z (0);
+        }
+       }
+        }
+
+        input{
+            font-size:30px;
+            padding: 5px 0px;
+            border:none ;
+            outline:none ;
+
+        }
+    }
+
+.notification{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+}
+
+}
+*{transition: all ease-in-out 0.3s;}
